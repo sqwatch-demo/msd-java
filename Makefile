@@ -1,7 +1,7 @@
-BUILD_VERSION := 0.0.2-SNAPSHOT
+BUILD_VERSION := local
 BUILD_DATE := $(shell date +%Y-%m-%dT%T%z)
 TRAVIS_COMMIT ?= $(shell git rev-parse @)
-IMAGE_ORG ?= weaveworksdemos
+IMAGE_ORG ?= sqwatch-demo
 
 export BUILD_VERSION BUILD_DATE IMAGE_ORG
 export TRAVIS_COMMIT TRAVIS_BRANCH TRAVIS_TAG TRAVIS_PULL_REQUEST
